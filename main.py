@@ -1,22 +1,19 @@
-import os
+from turtle import *
 
-#print("Текущая директория:", os.getcwd())
+tracer(0)
+left(90)
 
-# print(os.path.isdir("my_folder"))
-# if not os.path.isdir("my_folder"): #проверка на наличие папки в текущей директории
-#     os.mkdir("my_folder")
-
-#изменение текущего каталога
-os.chdir("new_folder")
-# print("Текущая директория:", os.getcwd())
-if not os.path.isdir("new2"):
-    os.mkdir("new2")
-os.chdir("new2")
-# print("Текущая директория:", os.getcwd())
-# print("Текущая директория:", os.getcwd())
-# os.chdir("new_folder/new2")
-print("Текущая директория:", os.getcwd())
-os.chdir("..")
-print("Текущая директория:", os.getcwd())
-
-# os.makedirs("nested1/nested2/nested3") #создание нескольких вложенных папок
+down()
+right(315)
+for _ in range(7):
+    forward(16 * 10)
+    right(45)
+    forward(8 * 10)
+    right(135)
+for x in range(-15, 15):
+    for y in range(0, 25):
+        up()
+        goto(x * 10, y * 10)
+        down()
+        dot(3)
+update()
