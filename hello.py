@@ -1,4 +1,9 @@
-#12??36*1
-for i in range(1200361, 10**8):
-    if i%273==0 and str(i)[:2]=='12' and str(i)[4:6]=='36' and str(i)[-1]=='1':
-        print(i,i//273)
+from random import randint
+s =[randint(160, 196) for x in range(25)]
+print (s)
+max = max(s)
+for i in range(len(s)):
+    for g in range (0,len(s)-i-1);
+    if s[i] < s[i+1]:
+    s[i], s[i+1] = s[i+1], s[i]
+    print (s)
